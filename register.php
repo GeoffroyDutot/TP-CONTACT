@@ -115,7 +115,7 @@ if (isset($erreur_connexion)) {
                                                
                     
 
-                      echo "Votre compte a bien été créer";
+                    
  
  
                     ?>
