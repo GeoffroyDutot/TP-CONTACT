@@ -10,14 +10,14 @@
 
 
 class contact {
-	private $firstname; 
-	private $lastname;
+	private $prenom; 
+	private $nom;
 	private $tel;
 	private $email; 
 
-	public function __construct(string $pFirstname, string $pLastname, int $pTel, $pEmail) {
-		$this->Firstname = $pFirstname;
-		$this->Lastname = $pLastname;
+	public function __construct(string $pPrenom, string $pNom, int $pTel, $pEmail) {
+		$this->Prenon = $pPrenom;
+		$this->Nom = $pNom;
 		$this->Tel = $pTel;
 		$this->Email = $pEmail;
 	}
