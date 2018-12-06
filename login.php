@@ -57,10 +57,10 @@
       <input type="password" id="password" class="form-control" placeholder="Mot de passe" required>
       <div class="checkbox mb-3">
         <label>
-          <input type="checkbox" value="remember-me"> Remember me
+          <input type="checkbox" value="remember-me"> Se souvenir de moi
         </label>
       </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Connexion</button>
       <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
     </form>
   </body>
