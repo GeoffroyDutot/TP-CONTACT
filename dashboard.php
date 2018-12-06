@@ -1,10 +1,18 @@
-<table>
-	<thead>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Dashboard</title>
+	</head>
+	<body>
+		<table>
+		<thead>
 		<tr>
 			<th>id</th>
 			<th>Nom</th>
 			<th>Action</th>
 		</tr>
+		</thead>
 		<tbody>
 			<tr>
 				<td>1</td>
@@ -15,5 +23,6 @@
 				</form></td>
 			</tr>
 		</tbody>
-	</thead>
-</table>
+	</table>
+	</body>
+</html>
