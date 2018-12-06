@@ -123,7 +123,7 @@ if (isset($erreur_connexion)) {
 
 <p>
 <label for="email">Votre e-mail :</label>
-<input type="text" name="email" id="email" tabindex="30" />
+<input type="text" name="email" required="" id="email" tabindex="30" />
 <br />
 </p><br>
 
