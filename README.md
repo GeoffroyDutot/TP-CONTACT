@@ -2,6 +2,6 @@
 
 # Nathan libouton
 # Valentin Cloarec
-# Maël Dutot
+# Maël Debon
 # Simon Bourraseau
 # Geoffroy Dutot
