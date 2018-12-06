@@ -1,6 +1,5 @@
 
 <!DOCTYPE html>
-<<<<<<< HEAD
 
 <html>
 
