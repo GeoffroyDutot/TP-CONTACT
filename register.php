@@ -17,68 +17,10 @@ catch (Exception $e)
 <html>
  <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
 
  </head>
  <body>
-
-
-<h1>Compte</h1>
-
-<center><form action=""  method="post">  
-
-
-
-<?php
-                        if(isset($_POST['Connexion'])) {
-                           
-                            $emailconnect = htmlspecialchars($_POST['email']);
-                            $mdpconnect = sha1($_POST['password']);
-                           
-                            if(!empty($pseudoconnect) && !empty($mdpconnect)) {
-                              $requser = $bdd->prepare("SELECT * FROM utilisateurs WHERE email = ? AND password = ?");
-                              $requser->execute(array(
-                                  $emailconnect,
-                                  $mdpconnect
-                              ));
-                              $userexist = $requser->rowCount();
-                              if($userexist == 1) {
-                                 $userinfo = $requser->fetch();
-                                 $_SESSION['id'] = $userinfo['id'];
-                                 header("Location: ???????_?id=".$_SESSION['id']);
-                              } else {
-                                 $erreur_connexion = "Mauvais pseudo ou mot de passe !";
-                              }
-                           } else {
-                              $erreur_connexion = "Tous les champs doivent être complétés !";
-                           }
-                        }
-                    ?>
-
-                        
-  <label for="email">Votre pseudo :</label> 
-  <input type="text" name="email" />
-
-
-<p>
-<label for="password">Mot de passe :</label>
-<input type="password" name="mdp" id="password" />
-</p><br>
- 
-<?php 
-
-if (isset($erreur_connexion)) {
-                        echo("<font color=\"red\">" . $erreur_connexion . "</font><br><br>");
-                    } ?>
-
-
-
-<input class="button" type="submit" name="Connexion" value="Connexion" <a href="profil.php"></a>
-                        </form></center> 
-
-
-
 
 
 
@@ -100,14 +42,14 @@ if (isset($erreur_connexion)) {
  
                         if (!empty($_POST['email']) && !empty($_POST['password'])) {
                             
-                                               $insertmbr = $bdd->prepare("INSERT INTO ? (email, password) VALUES(:email, :password)");
+                                               $insertmbr = $bdd->prepare("INSERT INTO utilisateurs (email, password) VALUES(:email, :password)");
                                                $insertmbr->execute(array(
                                                    'email' => $_POST['email'],
                                                    'password' => $mdp
                                                
                                                ));
 
-                                               header('location: Mon espace.php');
+                                               header('location: dashboard.php');
 
                                                }  else {
         $erreur = "Tous les champs doivent être complétés !";
@@ -116,7 +58,7 @@ if (isset($erreur_connexion)) {
                                                
                     
 
-                      echo "Votre compte a bien été créer";
+                    
  
  
                     ?>
