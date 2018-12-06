@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		
-		<a href="logout.php"><button type="button" class="btn btn-secondary btn-sm">Deconnexion</button></a
+		<a href="logout.php"><button type="button" class="btn btn-secondary btn-sm">Deconnexion</button></a>
 
 		<table>
 		<thead>
