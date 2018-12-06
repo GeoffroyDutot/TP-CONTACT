@@ -50,7 +50,7 @@
 
     <form class="form-signin">
       <img class="mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+      <h1 class="h3 mb-3 font-weight-normal">Connectez-vous</h1>
       <label for="email" class="sr-only">Votre email :</label>
       <input type="email" id="email" class="form-control" placeholder="Adresse email" required autofocus>
       <label for="password" class="sr-only">Mot de passe :</label>
