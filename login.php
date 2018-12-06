@@ -20,13 +20,41 @@
   </head>
 
   <body class="text-center">
+
+
+    <?php
+                        if(isset($_POST['Connexion'])) {
+                           
+                            $emailconnect = htmlspecialchars($_POST['email']);
+                            $mdpconnect = sha1($_POST['password']);
+                           
+                            if(!empty($pseudoconnect) && !empty($mdpconnect)) {
+                              $requser = $bdd->prepare("SELECT * FROM utilisateurs WHERE email = ? AND password = ?");
+                              $requser->execute(array(
+                                  $emailconnect,
+                                  $mdpconnect
+                              ));
+                              $userexist = $requser->rowCount();
+                              if($userexist == 1) {
+                                 $userinfo = $requser->fetch();
+                                 $_SESSION['utilisateur_id'] = $userinfo['utilisateur_id'];
+                                 header("Location: dashboard.php?id=".$_SESSION['utilisateur_id']);
+                              } else {
+                                 $erreur_connexion = "Mauvais pseudo ou mot de passe !";
+                              }
+                           } else {
+                              $erreur_connexion = "Tous les champs doivent être complétés !";
+                           }
+                        }
+                    ?>
+                    
     <form class="form-signin">
       <img class="mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
       <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-      <label for="email">Votre email :</label>
-      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-      <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <label for="email" class="sr-only">Votre email :</label>
+      <input type="email" id="email" class="form-control" placeholder="Email address" required autofocus>
+      <label for="password" class="sr-only">Password</label>
+      <input type="password" id="password" class="form-control" placeholder="Password" required>
       <div class="checkbox mb-3">
         <label>
           <input type="checkbox" value="remember-me"> Remember me
