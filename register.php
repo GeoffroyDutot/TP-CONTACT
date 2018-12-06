@@ -45,7 +45,7 @@ catch (Exception $e)
                               if($userexist == 1) {
                                  $userinfo = $requser->fetch();
                                  $_SESSION['utilisateur_id'] = $userinfo['utilisateur_id'];
-                                 header("Location: ???????_?id=".$_SESSION['id']);
+                                 header("Location: dashboard.php?id=".$_SESSION['utilisateur_id']);
                               } else {
                                  $erreur_connexion = "Mauvais pseudo ou mot de passe !";
                               }
@@ -106,7 +106,7 @@ if (isset($erreur_connexion)) {
                                                
                                                ));
 
-                                               header('location: Mon espace.php');
+                                               header('location: dashboard.php');
 
                                                }  else {
         $erreur = "Tous les champs doivent être complétés !";
