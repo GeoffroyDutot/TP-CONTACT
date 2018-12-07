@@ -26,7 +26,7 @@ include('config/bdd.php');
             </tr>
             <tr>
                 <td>Prenom : </td>
-                <td><input tupe="text" name="contact_prenom" required></td>
+                <td><input type="text" name="contact_prenom" required></td>
             </tr>
             <tr>
                 <td>Telephone : </td>
