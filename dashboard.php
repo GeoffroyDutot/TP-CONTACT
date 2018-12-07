@@ -26,7 +26,7 @@ catch (Exception $e)
 		  <?php
       if(isset($_POST['Ajouter'])) {
 
-      header("Location: dashboard.php");
+      header("Location: nouveau.php");
 
        }
    
