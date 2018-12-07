@@ -88,6 +88,7 @@ session_start();
                         echo '<font color="red">' . $erreur_connexion . "</font>";
                     }
                     ?>
+                    <br>
                 </fieldset>
       <div class="form-group">
           <a style="color: white;" href="register.php"><button type="button" class="btn btn-primary btn-block">Inscription</button></a>
