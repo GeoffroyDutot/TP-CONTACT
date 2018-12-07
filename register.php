@@ -85,15 +85,13 @@ catch (Exception $e)
 <article class="card-body mx-auto" style="max-width: 400px;">
   <h4 class="card-title mt-3 text-center">Créer un compte</h4>
 
-
-
   <form>
 
     <div class="form-group input-group">
       <div class="input-group-prepend">
         <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
      </div>
-        <input name="" class="form-control" placeholder="Email address" type="email">
+        <input name="" class="form-control" placeholder="Adresse email" type="email">
     </div> <!-- form-group// -->
     <div class="form-group input-group">
   
@@ -104,16 +102,16 @@ catch (Exception $e)
     </div>
    
  
-        <input class="form-control" placeholder="Create password" type="password">
+        <input class="form-control" placeholder="Mot de passe" type="password">
     </div> <!-- form-group// -->
     <div class="form-group input-group">
       <div class="input-group-prepend">
         <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
     </div>
-        <input class="form-control" placeholder="Repeat password" type="password">
+        <input class="form-control" placeholder="Répéter le mot de passe" type="password">
     </div> <!-- form-group// -->
     <div class="form-group">
-        <button type="submit" class="btn btn-primary btn-block"> Create Account  </button>
+        <button type="submit" class="btn btn-primary btn-block"> Créer compte  </button>
     </div> <!-- form-group// -->
  
 </form>
