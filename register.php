@@ -12,17 +12,31 @@ catch (Exception $e)
 }
  
 ?> 
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
- <body>
-    <a href="index.php"><button type="button">Accueil</button></a>
 
-    <form action="" method="post">
-      <?php 
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TP-CONTACT</title>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+</head>
+
+<body>
+
+     <?php 
         if (isset($_POST['inscription'])) {
                   
           $mail = htmlspecialchars($_POST['email']);
@@ -64,17 +78,47 @@ catch (Exception $e)
                     }           
                 }
                 
-              ?>
+?>
 
-      <label for="email">Votre e-mail :</label><br>
-      <input type="email" name="email" required="" id="email" tabindex="30" /><br>
-      <label>Confirmation du mail</label><br>
-      <input type="email" required="" name="conf_email"><br>
-      <label for="password">Mot de passe :</label><br>
-      <input type="password" name="password" id="password" /><br>
-      <label>Confirmation mdp</label><br>
-      <input type="password" name="conf_password"><br>
-      <input class="button" type="submit" name="inscription" value="Je m'inscrit"> 
-    </form>
-  </body>
+
+<div class="card bg-light">
+<article class="card-body mx-auto" style="max-width: 400px;">
+  <h4 class="card-title mt-3 text-center">Créer un compte</h4>
+
+
+
+  <form>
+
+    <div class="form-group input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+     </div>
+        <input name="" class="form-control" placeholder="Email address" type="email">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group">
+  
+   
+    <div class="form-group input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+    </div>
+   
+ 
+        <input class="form-control" placeholder="Create password" type="password">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+    </div>
+        <input class="form-control" placeholder="Repeat password" type="password">
+    </div> <!-- form-group// -->
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-block"> Create Account  </button>
+    </div> <!-- form-group// -->
+ 
+</form>
+
+
+
+</body>
 </html>
