@@ -1,3 +1,17 @@
+<?php
+
+session_start();
+try
+{
+    $bdd = new PDO('mysql:host=127.0.0.1;dbname=annuaire;charset=utf8', 'root', '');
+}
+catch (Exception $e)
+{
+        die('Erreur : ' . $e->getMessage());
+}
+ 
+?> 
+
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -22,8 +36,8 @@
 			<tr>
 				<td>1</td>
 				<td>Jean pierre</td>
-				<td><a href=<?php if (isset($_SESSION['id_membre']) >= 1) {
-						echo "add_modif.php?id=" . $_SESSION['id_membre'];
+				<td><a href=<?php if (isset($_SESSION['utilisateur_id']) >= 1) {
+						echo "add_modif.php?id=" . $_SESSION['utilisateur_id'];
 						}else {
 						echo "index";
 						} ?>><button type="button" class="btn btn-secondary btn-sm">Modifier le contact</button></a>
