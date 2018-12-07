@@ -1,8 +1,33 @@
 <?php
+try
+{
+  $bdd = new PDO('mysql:host=127.0.0.1;dbname=annuaire;charset=utf8', 'root', '');
+}
+catch (Exception $e)
+{
+        die('Erreur : ' . $e->getMessage());
+}
 
-// Ouverture de la session
 session_start();
 include('config/bdd.php');
+?>
+
+<html>
+<head>
+
+
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>TP-CONTACT</title>
+
+ </head>
+ <body>
+
+
+
+<h1>Profil</h1>
+
+<?php
 
     // Requête SQL
     $sql = 'SELECT * FROM contact WHERE contact_id = ?';
@@ -17,3 +42,7 @@ while($row = $req->fetch()) {
 }
 
 echo $_SESSION['contact_nom'];
+?>
+
+
+</html>

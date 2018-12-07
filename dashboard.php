@@ -39,7 +39,8 @@ catch (Exception $e)
     <tr>
       <th><?php echo $recup['contact_id']?></th>
       <td><?php echo $recup['contact_nom']?></td>
-      <td><a href=""><button type="button" class="btn btn-secondary btn-sm">Modifier le contact</button></a>
+      <td><a href="fiche-contact.php"><button type="button" class="btn btn-secondary btn-sm">Voire profil</button></a>
+        <a href=""><button type="button" class="btn btn-secondary btn-sm">Modifier le contact</button></a>
         <a href="suppr.php"><button type="button" class="btn btn-secondary btn-sm">Supprimer le contact</button></a>
         </td>
      </tr>
