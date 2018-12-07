@@ -24,7 +24,7 @@
     </tr>
     <tr>
         <td>Telephone : </td>
-        <td><input type="text" name="contact_tel"></td>
+        <td><input type="text" minlength="10" maxlength="10" name="contact_tel"></td>
     </tr>
     <tr>
         <td>Email :</td>
