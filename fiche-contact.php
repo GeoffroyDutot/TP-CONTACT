@@ -30,7 +30,7 @@ catch (Exception $e)
 
     while ($recup = $reqcontact->fetch()){
     ?>
-    <form method="post">
+    <form method="post" action="dashboard.php">
         <table>
             <tr>
                 <td>Nom :</td>
