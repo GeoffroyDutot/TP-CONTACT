@@ -34,7 +34,7 @@ catch (Exception $e)
         <table>
         <tr>
                 <td>ID :</td>
-                <td><input type="text" name="contact_id" value="<?php echo $recup['contact_id']?>" required></td>
+                <td><input type="text" name="contact_id" value="<?php echo $recup['contact_id']?>" required disabled></td>
             </tr>
             <tr>
                 <td>Nom :</td>

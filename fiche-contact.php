@@ -1,48 +1,59 @@
 <?php
+
+session_start();
 try
 {
-  $bdd = new PDO('mysql:host=127.0.0.1;dbname=annuaire;charset=utf8', 'root', '');
+    $bdd = new PDO('mysql:host=127.0.0.1;dbname=annuaire;charset=utf8', 'root', '');
 }
 catch (Exception $e)
 {
-        die('Erreur : ' . $e->getMessage());
+    die('Erreur : ' . $e->getMessage());
 }
-
-session_start();
-include('config/bdd.php');
 ?>
+<DOCTYPE html>
+    <html lang="fr">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <meta charset="utf-8">
+    <head>
+        <title>Fiche contact</title>
+    </head>
+    <body>
 
-<html>
-<head>
+    <h1>Fiche contact</h1>
 
+    <?php
+    $contact_id = $_POST['contact_id'];
+    $reqcontact = $bdd->query("SELECT * FROM contact WHERE contact_id = $contact_id");
 
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>TP-CONTACT</title>
+    while ($recup = $reqcontact->fetch()){
+    ?>
+    <form method="post">
+        <table>
+            <tr>
+                <td>Nom :</td>
+                <td><input type="text" name="contact_nom" value="<?php echo $recup['contact_nom']?>" disabled></td>
+            </tr>
+            <tr>
+                <td>Prenom : </td>
+                <td><input type="text" name="contact_prenom" value="<?php echo $recup['contact_prenom']?>" disabled></td>
+            </tr>
+            <tr>
+                <td>Telephone : </td>
+                <td><input type="text" name="contact_tel" value="<?php echo $recup['contact_tel']?>" disabled></td>
+            </tr>
+            <tr>
+                <td>Email :</td>
+                <td><input type="email" name="contact_email" value="<?php echo $recup['contact_email']?>" disabled></td>
+            </tr>
+        </table>
 
- </head>
- <body>
+        <input type ="submit" value="Retour au dashboard">
 
-
-
-<h1>Profil</h1>
-
-<?php
-
-    // Requête SQL
-    $sql = 'SELECT * FROM contact WHERE contact_id = ?';
-    $req = $bdd->prepare($sql);
-    $req->execute(array($_SESSION['contact_id']));
-
-while($row = $req->fetch()) {
-
-    // On récupère les champs dans la base de données pour la session
-    $_SESSION['contact_nom'] = $row['contact_nom'];
-    $_SESSION['contact_prenom'] = $row['contact_prenom'];
-}
-
-echo $_SESSION['contact_nom'];
-?>
-
-
+    </form>
+</body>
 </html>
+
+    <?php } ?>
