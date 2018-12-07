@@ -14,7 +14,7 @@
 		<!-- Banner -->
 			<section id="banner">
 				<i class="icon fa-diamond"></i>
-				<h2>Contact</h2>
+				<h2>votre Liste de Contact en ligne</h2>
 				<ul class="actions">
 					<li><a href="login.php" class="button big special">Se connecter</a></li>
 				</ul>
