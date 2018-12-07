@@ -3,6 +3,7 @@
 
 //Définition de l'encodage de la page
 header('Content-Type: text/html; charset=utf-8');
+header('Location: dashboard.php');
 
 //On accède à la base de données
 include('config/bdd.php');
