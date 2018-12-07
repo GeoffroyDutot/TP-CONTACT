@@ -22,6 +22,7 @@ catch (Exception $e)
 	</head>
 	<body>
 
+<<<<<<< HEAD
 <table class="table">
   <thead class="thead-light">
     <tr>
@@ -52,6 +53,35 @@ catch (Exception $e)
     </tr>
   </tbody>
 </table>
+=======
+
+		  <?php
+      if(isset($_POST['Ajouter'])) {
+
+      header("Location: nouveau.php");
+
+       }
+   
+      ?>
+		
+
+		<table>
+
+		<thead>
+		<tr>
+			<th>id</th>
+			<th>Nom</th>
+			<th>Action</th>
+		</tr>
+		</thead>
+		<tbody>
+
+
+
+			<tr>
+				<td>1</td>
+				<td>Jean pierre</td>
+>>>>>>> 2ed63a7e8b45431c6dfe4a923622111112b538bf
 				<td><a href=""><button type="button" class="btn btn-secondary btn-sm">Modifier le contact</button></a>
 				<a href="suppr.php"><button type="button" class="btn btn-secondary btn-sm">Supprimer le contact</button></a>
 				</td>
