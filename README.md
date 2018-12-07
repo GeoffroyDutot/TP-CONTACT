@@ -1,7 +1,8 @@
-# TP-CONTACT
+TP-CONTACT
+===
 
-# Nathan libouton
-# Valentin Cloarec
-# Maël Debon
-# Simon Bourraseau
-# Geoffroy Dutot
+## Nathan Libouton
+## Valentin Cloarec
+## Maël Debon
+## Simon Bourrasseau
+## Geoffroy Dutot
