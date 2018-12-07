@@ -33,7 +33,12 @@ if($test == false) {
     $req = $bdd->prepare("INSERT INTO contact(contact_nom, contact_prenom, contact_tel, contact_email) VALUES(:contact_nom, :contact_prenom, :contact_tel, :contact_email)");
 
 // Exécution de la requête
-    $req->execute();
+    $req->execute(array(
+        'contact_nom' => $_POST['contact_nom'],
+        'contact_prenom' => $_POST['contact_prenom'],
+        'contact_tel' => $_POST['contact_tel'],
+        'contact_email' => $_POST['contact_email'],
+    ));
 
 
 }
