@@ -26,6 +26,8 @@ catch (Exception $e)
                 color: white;
                 height: 0px;
                 width: 0px;
+                position: relative;
+                float: left;
             }
         </style>
 	</head>
@@ -34,9 +36,9 @@ catch (Exception $e)
 <table class="table">
   <thead class="thead-light">
     <tr>
-      <th scope="col">id</th>
+      <th scope="col">ID</th>
       <th scope="col">Nom</th>
-      <th scope="col">Action</th>
+      <th scope="col">Actions</th>
     </tr>
   </thead>
   <tbody>
@@ -50,8 +52,8 @@ catch (Exception $e)
     <tr>
       <th><?php echo $recup['contact_id']?></th>
       <td><?php echo $recup['contact_nom']?></td>
-      <td><a href="fiche-contact.php"><button type="button" class="btn btn-secondary btn-sm">Voir profil</button></a><br />
-          <form action="edit.php" method="POST"><input class="invisible" type="text" name="contact_id" value="<?php echo $recup['contact_id']?>" readonly><input type="submit" value="Modifier" class="btn btn-secondary btn-sm"></form><br />
+      <td><a href="fiche-contact.php" class="btn btn-secondary btn-sm">Voir profil</a>
+          <form action="edit.php" method="POST"><input class="invisible" type="text" name="contact_id" value="<?php echo $recup['contact_id']?>" readonly><input type="submit" value="Modifier" class="btn btn-secondary btn-sm"></form>
           <form action="suppr.php" method="POST"><input class="invisible" type="text" name="contact_id" value="<?php echo $recup['contact_id']?>" readonly><input type="submit" value="Supprimer" class="btn btn-secondary btn-sm"></form>
         </td>
      </tr>
