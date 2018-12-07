@@ -19,6 +19,15 @@ catch (Exception $e)
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<meta charset="utf-8">
 		<title>Dashboard</title>
+        <style>
+            .invisible{
+                background-color: transparent;
+                border: 0px solid transparent;
+                color: white;
+                height: 0px;
+                width: 0px;
+            }
+        </style>
 	</head>
 	<body>
 
@@ -39,9 +48,9 @@ catch (Exception $e)
     <tr>
       <th><?php echo $recup['contact_id']?></th>
       <td><?php echo $recup['contact_nom']?></td>
-      <td><a href="fiche-contact.php"><button type="button" class="btn btn-secondary btn-sm">Voire profil</button></a>
-        <a href=""><button type="button" class="btn btn-secondary btn-sm">Modifier le contact</button></a>
-        <a href="suppr.php"><button type="button" class="btn btn-secondary btn-sm">Supprimer le contact</button></a>
+      <td><a href="fiche-contact.php"><button type="button" class="btn btn-secondary btn-sm">Voir profil</button></a>
+          <form action="edit.php" method="POST"><input class="invisible" type="text" name="contact_id" value="<?php echo $recup['contact_id']?>" readonly><input type="submit" value="Modifier"></form>
+          <form action="suppr.php" method="POST"><input class="invisible" type="text" name="contact_id" value="<?php echo $recup['contact_id']?>" readonly><input type="submit" value="Supprimer"></form>
         </td>
      </tr>
     <?php
@@ -53,7 +62,7 @@ catch (Exception $e)
 			</tr>
 		</tbody>
 	</table>
-  <a href="nouveau.php"> <button type="button">Ajouter</button></a><br><br>
+  <a href="ajout.php"> <button type="button">Ajouter</button></a><br><br>
   	<a href="logout.php"><button type="button" class="btn btn-secondary btn-sm">Deconnexion</button></a>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
