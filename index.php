@@ -28,16 +28,16 @@
 			<footer id="footer">
 				<div class="inner">
 					<ul class="icons">
-						<li><a href="" class="icon fa-facebook">
+						<li><a href="https://www.facebook.com/" class="icon fa-facebook">
 							<span class="label">Facebook</span>
 						</a></li>
-						<li><a href="" class="icon fa-twitter">
+						<li><a href="https://www.twitter.com/" class="icon fa-twitter">
 							<span class="label">Twitter</span>
 						</a></li>
-						<li><a href="" class="icon fa-instagram">
+						<li><a href="https://www.instagram.com/" class="icon fa-instagram">
 							<span class="label">Instagram</span>
 						</a></li>
-						<li><a href="" class="icon fa-linkedin">
+						<li><a href="https://www.linkedin.com/" class="icon fa-linkedin">
 							<span class="label">LinkedIn</span>
 						</a></li>
 					</ul>
