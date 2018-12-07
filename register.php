@@ -66,6 +66,7 @@ catch (Exception $e)
                                         'email' => $_POST['email'],
                                         'password' => $mdp
                                       ));
+                                        header('Refresh: 1; url=login.php');
                                       $reussi = "<font color=\"green\">Votre compte a été crée !</font>";
                                     }else {
                                     $erreur = "Vos mots de passes ne correspondent pas !";
