@@ -46,7 +46,7 @@ catch (Exception $e)
             </tr>
             <tr>
                 <td>Telephone : </td>
-                <td><input type="text" name="contact_tel" value="<?php echo $recup['contact_tel']?>"></td>
+                <td><input type="text" name="contact_tel" maxlength="10" value="<?php echo $recup['contact_tel']?>"></td>
             </tr>
             <tr>
                 <td>Email :</td>
