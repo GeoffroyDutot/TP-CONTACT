@@ -36,7 +36,7 @@ catch (Exception $e)
 
 <body>
 
-     
+
 
 <div class="card bg-light">
 <article class="card-body mx-auto" style="max-width: 400px;">
@@ -66,6 +66,7 @@ catch (Exception $e)
                                         'email' => $_POST['email'],
                                         'password' => $mdp
                                       ));
+                                        header('Refresh: 1; url=login.php');
                                       $reussi = "<font color=\"green\">Votre compte a été crée !</font>";
                                     }else {
                                     $erreur = "Vos mots de passes ne correspondent pas !";
@@ -129,7 +130,9 @@ catch (Exception $e)
 
 </form>
 
-
+    <div class="form-group">
+        <a style="color: white;" href="login.php"><button type="button" class="btn btn-primary btn-block">Connexion</button></a>
+    </div>
 
 </body>
 
