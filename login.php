@@ -17,20 +17,21 @@ session_start();
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TP-CONTACT</title>
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+ 
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 </head>
 
 <body>
-<div class="col-md-12">
-  <div class="modal-dialog" style="margin-bottom:0">
-    <div class="modal-content">
-      <div class="panel-heading">
-        <h3 class="panel-title">Connexion</h3>
-      </div>
-        <div class="panel-body">
-          <form method="POST" action="">
+<div class="card bg-light">
+<article class="card-body mx-auto" style="max-width: 400px;">
+  <h4 class="card-title mt-3 text-center">Se connecter</h4>
+
+  <form action="" method="POST">
             <?php // formulaire de connexion
             if(isset($_POST['Connexion'])) {
                 
@@ -57,18 +58,32 @@ session_start();
             }
           ?>
                 <fieldset>
-                  <div class="form-group">
-                    <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus="">
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" placeholder="Mot de passe" name="password" type="password" value="">
-                  </div>
-                    <input class="button" type="submit" name="Connexion" value="Connexion" <a href="profil.php"></a>
-                    <?php if (isset($erreur_connexion)) {
-                      echo("<font color=\"red\">" . $erreur_connexion . "</font><br><br>");
-                          } 
-                    ?>
-                    <a href="register.php"><button type="button">S'incrire</button></a>
+                 <div class="form-group input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+     </div>
+        <input name="email" class="form-control" placeholder="Adresse email" type="email">
+    </div>
+
+      <div class="form-group input-group">
+      <div class="input-group-prepend">
+       
+    
+   
+    <div class="form-group input-group">
+    <div class="input-group-prepend">
+        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+    </div>
+   
+ 
+        <input class="form-control" name="password" placeholder="Mot de passe" type="password">
+    </div> 
+    <div class="form-group input-group">
+      <div class="input-group-prepend">
+      <br>
+    <div class="form-group">
+        <input type="submit" value="Connection" name="inscription" class="btn btn-primary btn-block">
+    </div> 
                 </fieldset>
             </form>
         </div>
