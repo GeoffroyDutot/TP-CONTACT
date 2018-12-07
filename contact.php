@@ -74,7 +74,7 @@ class Contact {
     /**
      * @param string $contact_nom
      */
-    public function setContact_Email(string $contact_email1): void
+    public function setContact_Email(string $contact_email): void
     {
         $this->contact_email = $contact_email;
     }
@@ -96,3 +96,4 @@ class Contact {
     }
 }
 
+$contact = new Contact("jen", "nrehh", "2456", "rlef@frf.fr", "1");

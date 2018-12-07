@@ -1,45 +1,18 @@
 <?php
-require_once 'Config.php';
+
+session_start();
+
+require_once 'config/bdd.php';
 require_once 'contact.php';
 
-$host = 'lacalhost';
-$port = 3306;
-$database = 'annuaire';
-$contact = array();
-try {
-    $driver = sprintf(
-        "mysql:host=%s;port=%s;dbname=%s",
-        Config::HOST,
-        Config::PORT,
-        Config::DATABASE
-        );
-    $pdo = new PDO(
-        $driver,
-        Config::LOGIN,
-        Config::PASSWORD);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-//    $pdo->exec("INSERT INTO clients (firstname, lastname) VALUES ('jane', 'die');");
-//    var_dump("Le dernier ID est : " . $pdo->lastInsertId());
-    $stmt = $pdo->query("SELECT * FROM contact;");
-//    var_dump($stmt->fetchObject());
-    while (($row = $stmt->fetch(PDO::FETCH_ASSOC)) !== false) {
-        $client = new Contact(
-            $row['contact_prenom'],
-            $row['contact_nom'],
-            $row['contact_tel'],
-            $row['contact_email'],
-            $row['contact_id']
-        );
-        $clients[] = $client;
-    }
-//    var_dump($stmt);
-} catch (PDOException $e) {
-    var_dump($e->getMessage());
-//    var_dump("Bad credentials");
-} finally {
-    $pdo = null;
+try
+{
+    $bdd = new PDO('mysql:host=127.0.0.1;dbname=annuaire;charset=utf8', 'root', '');
 }
-
+catch (Exception $e)
+{
+        die('Erreur : ' . $e->getMessage());
+}
 
 ?><!doctype html>
 <html lang="Fr-fr">
@@ -65,11 +38,11 @@ try {
     <tbody>
     <?php foreach ($contact as $contact): ?>
     <tr>
-        <td><?= $client->getcontact_prenom() ?></td>
-        <td><?= $client->getcontact_nom() ?></td>
-        <td><?= $client->getcontact_tel() ?></td>
-        <td><?= $client->getcontact_email() ?></td>
-        <td><?= $client->getcontact_id() ?></td>
+        <td><?php echo"$contact->getContact_Nom()"; ?></td>
+        <td><?php echo"$contact->getContact_Prenom()"; ?></td>
+        <td><?php echo"$contact->getContact_Tel()"; ?></td>
+        <td><?php echo"$contact->getContact_Email()"; ?></td>
+        <td><?php echo"$contact->getContact_Id()"; ?></td>
     </tr>
     <?php endforeach; ?>
     </tbody>
