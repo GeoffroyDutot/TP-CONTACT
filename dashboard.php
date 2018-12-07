@@ -48,9 +48,9 @@ catch (Exception $e)
     <tr>
       <th><?php echo $recup['contact_id']?></th>
       <td><?php echo $recup['contact_nom']?></td>
-      <td><a href="fiche-contact.php"><button type="button" class="btn btn-secondary btn-sm">Voir profil</button></a>
-          <form action="edit.php" method="POST"><input class="invisible" type="text" name="contact_id" value="<?php echo $recup['contact_id']?>" readonly><input type="submit" value="Modifier"></form>
-          <form action="suppr.php" method="POST"><input class="invisible" type="text" name="contact_id" value="<?php echo $recup['contact_id']?>" readonly><input type="submit" value="Supprimer"></form>
+      <td><a href="fiche-contact.php"><button type="button" class="btn btn-secondary btn-sm">Voir profil</button></a><br />
+          <form action="edit.php" method="POST"><input class="invisible" type="text" name="contact_id" value="<?php echo $recup['contact_id']?>" readonly><input type="submit" value="Modifier" class="btn btn-secondary btn-sm"></form><br />
+          <form action="suppr.php" method="POST"><input class="invisible" type="text" name="contact_id" value="<?php echo $recup['contact_id']?>" readonly><input type="submit" value="Supprimer" class="btn btn-secondary btn-sm"></form>
         </td>
      </tr>
     <?php
