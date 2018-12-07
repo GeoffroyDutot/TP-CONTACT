@@ -45,7 +45,8 @@ catch (Exception $e)
   <a href="ajout.php"> <button type="button" class="btn btn-secondary btn-sm">Ajouter</button></a>&nbsp;
   <a href="logout.php"><button type="button" class="btn btn-secondary btn-sm">Déconnexion</button></a><br /><br />
   <?php
-  $reqcontact = $bdd->query("SELECT * FROM contact");
+  $utilisateur_id = $_SESSION['utilisateur_id'];
+  $reqcontact = $bdd->query("SELECT * FROM contact WHERE proprietaire_id=$utilisateur_id");
 
   while ($recup = $reqcontact->fetch()){
       ?>
