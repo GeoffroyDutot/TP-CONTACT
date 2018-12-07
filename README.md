@@ -1,6 +1,8 @@
 TP-CONTACT
 ===
 
+---
+
 ## Nathan Libouton
 ## Valentin Cloarec
 ## Maël Debon
