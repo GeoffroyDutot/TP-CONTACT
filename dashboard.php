@@ -36,11 +36,7 @@ catch (Exception $e)
 			<tr>
 				<td>1</td>
 				<td>Jean pierre</td>
-				<td><a href=<?php if (isset($_SESSION['utilisateur_id']) >= 1) {
-						echo "add_modif.php?id=" . $_SESSION['utilisateur_id'];
-						}else {
-						echo "index";
-						} ?>><button type="button" class="btn btn-secondary btn-sm">Modifier le contact</button></a>
+				<td><a href=""><button type="button" class="btn btn-secondary btn-sm">Modifier le contact</button></a>
 				<a href="suppr.php"><button type="button" class="btn btn-secondary btn-sm">Supprimer le contact</button></a>
 				</td>
 			</tr>

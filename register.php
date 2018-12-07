@@ -130,7 +130,9 @@ catch (Exception $e)
 
 </form>
 
-
+    <div class="form-group">
+        <a style="color: white;" href="login.php"><button type="button" class="btn btn-primary btn-block">Connexion</button></a>
+    </div>
 
 </body>
 
