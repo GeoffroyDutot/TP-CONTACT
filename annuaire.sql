@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  ven. 07 déc. 2018 à 13:42
--- Version du serveur :  8.0.13
+-- Généré le :  ven. 07 déc. 2018 à 17:44
+-- Version du serveur :  5.7.23
 -- Version de PHP :  7.2.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -37,16 +37,9 @@ CREATE TABLE IF NOT EXISTS `contact` (
   `contact_prenom` varchar(40) NOT NULL,
   `contact_tel` int(10) NOT NULL,
   `contact_email` varchar(60) NOT NULL,
+  `proprietaire_id` int(11) NOT NULL,
   PRIMARY KEY (`contact_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
-
---
--- Déchargement des données de la table `contact`
---
-
-INSERT INTO `contact` (`contact_id`, `contact_nom`, `contact_prenom`, `contact_tel`, `contact_email`) VALUES
-(1, 'Dutot', 'Geoffroy le dev', 785931283, 'dutotgeof@gmail.com'),
-(2, 'Libouton', 'Nathan', 623853160, 'libouton.nathan@gmail.com');
+) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -60,15 +53,7 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
   `email` varchar(50) NOT NULL,
   `password` varchar(128) NOT NULL,
   PRIMARY KEY (`utilisateur_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
-
---
--- Déchargement des données de la table `utilisateurs`
---
-
-INSERT INTO `utilisateurs` (`utilisateur_id`, `email`, `password`) VALUES
-(1, 'test2@fleme.com', 'f7c3bc1d808e04732adf679965ccc34ca7ae3441'),
-(2, 'test@fleme.com', 'f7c3bc1d808e04732adf679965ccc34ca7ae3441');
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
