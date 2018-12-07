@@ -75,6 +75,11 @@ catch (Exception $e)
       <label>Confirmation mdp</label><br>
       <input type="password" name="conf_password"><br>
       <input class="button" type="submit" name="inscription" value="Je m'inscrit"> 
+      
+      <?php if (isset($erreur)) {
+                      echo("<font color=\"red\">" . $erreur . "</font><br><br>");
+                          } 
+                    ?>
     </form>
   </body>
 </html>
