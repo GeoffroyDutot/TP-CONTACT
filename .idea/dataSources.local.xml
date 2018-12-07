@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="annuaire.php@http" uuid="61729b10-5e3d-4c87-89c3-89bc28d639c9">
+    <data-source name="http://localhost/phpmyadmin/db_structure.php?server=1&amp;db=annuaire" uuid="61729b10-5e3d-4c87-89c3-89bc28d639c9">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
