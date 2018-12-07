@@ -1,11 +1,57 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Accueil</title>
+		<title>Retrospect by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
-	<body>
-		<a href="register.php">S'incrire</a><br>
-		<a href="login.php">Se connecter</a><br>
-		<a href="dashboard.php">dashboard</a>
+	<body class="landing">
+
+	
+		<!-- Banner -->
+			<section id="banner">
+				<i class="icon fa-diamond"></i>
+				<h2>Contact</h2>
+				<ul class="actions">
+					<li><a href="login.php" class="button big special">Se connecter</a></li>
+				</ul>
+					<ul class="actions">
+					<li><a href="register.php" class="button big special">Inscription</a></li>
+				</ul>
+			</section>
+
+	
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="" class="icon fa-facebook">
+							<span class="label">Facebook</span>
+						</a></li>
+						<li><a href="" class="icon fa-twitter">
+							<span class="label">Twitter</span>
+						</a></li>
+						<li><a href="" class="icon fa-instagram">
+							<span class="label">Instagram</span>
+						</a></li>
+						<li><a href="" class="icon fa-linkedin">
+							<span class="label">LinkedIn</span>
+						</a></li>
+					</ul>
+					
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
 	</body>
 </html>
