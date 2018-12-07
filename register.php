@@ -78,10 +78,9 @@ catch (Exception $e)
                     }           
                 }
                 
-<<<<<<< HEAD
-=======
+
 ?>
->>>>>>> 6758b6b902475b380d1874da4564608e16c836a0
+
 
               ?>
       <?php if (isset($erreur)) {
