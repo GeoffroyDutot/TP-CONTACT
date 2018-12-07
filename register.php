@@ -78,27 +78,14 @@ catch (Exception $e)
                     }           
                 }
                 
-<<<<<<< HEAD
-              ?>
 
-      <label for="email">Votre e-mail :</label><br>
-      <input type="email" name="email" required="" id="email" tabindex="30" /><br>
-      <label>Confirmation du mail</label><br>
-      <input type="email" required="" name="conf_email"><br>
-      <label for="password">Mot de passe :</label><br>
-      <input type="password" name="password" id="password" /><br>
-      <label>Confirmation mdp</label><br>
-      <input type="password" name="conf_password"><br>
-      <input class="button" type="submit" name="inscription" value="Je m'inscrit"> 
-      
+              ?>
       <?php if (isset($erreur)) {
                       echo("<font color=\"red\">" . $erreur . "</font><br><br>");
                           } 
                     ?>
     </form>
   </body>
-=======
-?>
 
 
 <div class="card bg-light">
@@ -139,5 +126,5 @@ catch (Exception $e)
 
 
 </body>
->>>>>>> 2b12dea6d97d86b309aeba3cdbf6a0311509b550
+
 </html>
