@@ -34,7 +34,7 @@ catch (Exception $e)
         <table>
         <tr>
                 <td>ID :</td>
-                <td><input type="text" name="contact_id" value="<?php echo $recup['contact_id']?>" required disabled></td>
+                <td><input type="text" name="contact_id" value="<?php echo $recup['contact_id']?>" readonly></td>
             </tr>
             <tr>
                 <td>Nom :</td>
@@ -46,7 +46,7 @@ catch (Exception $e)
             </tr>
             <tr>
                 <td>Telephone : </td>
-                <td><input type="text" name="contact_tel" maxlength="10" value="<?php echo $recup['contact_tel']?>"></td>
+                <td><input type="text" name="contact_tel" minlength="10" maxlength="10" value="<?php echo $recup['contact_tel']?>"></td>
             </tr>
             <tr>
                 <td>Email :</td>
