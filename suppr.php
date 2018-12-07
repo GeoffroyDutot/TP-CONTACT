@@ -3,13 +3,15 @@
 
 //Définition de l'encodage de la page
 header('Content-Type: text/html; charset=utf-8');
+
+//On accède à la base de données
 include('config/bdd.php');
 
 
 //Récupération des valeurs
 $contact_id = $_POST['contact_id'];
 
-                // On vérifie si la valeur n'est pas vide
+                // On vérifie si la variable $contact_id n'est pas vide
                 $test = empty($contact_id);
                     if($test == false) {
 
@@ -32,6 +34,8 @@ $req->execute();
 
 
                     }
+
+                    // Si la variable $contact_id est vide, on renvoit un message
                     else{
                         echo "Erreur";
                     }
