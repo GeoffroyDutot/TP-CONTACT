@@ -1,37 +1,39 @@
 <?php
-//Ouverture de la page
-
-//Définition de l'encodage de la page
-header('Content-Type: text/html; charset=utf-8');
-
-//On accède à la base de données
-include('config/bdd.php');
 
 
-//Récupération des valeurs
-$contact_nom = $_POST['contact_nom'];
-$contact_prenom = $_POST['contact_prenom'];
-$contact_tel = $_POST['contact_tel'];
-$contact_email = $_POST['contact_email'];
+?><DOCTYPE html>
+<html lang="fr">
+<meta charset="utf-8">
+<head>
+	<title>new</title>
+</head>
+<body>
 
-//Connexion à la base de données
-    try
-    {
-        $bdd->exec('SET NAMES utf8');
-    }
-    catch (Exception $e)
-    {
-        die('Erreur : ' . $e->getMessage());
-    }
+<h1>ajout ou modifidation de contact</h1>
 
+<form method="post" action="tr_ajout.php">
+<table>
+    <tr>
+        <td>Nom :</td>
+        <td><input type="text" name="contact_nom" required></td>
+    </tr>
+    <tr>
+        <td>Prenom : </td>
+        <td><input tupe="text" name="contact_prenom" required></td>
+    </tr>
+    <tr>
+        <td>Telephone : </td>
+        <td><input type="text" name="contact_tel"></td>
+    </tr>
+    <tr>
+        <td>Email :</td>
+        <td><input type="email" name="contact_email"></td>
+    </tr>
+</table>
 
-//Préparation de l'envoi des données vers la base de données
-    $req = $bdd->prepare("INSERT INTO contact(contact_nom, contact_prenom, contact_tel, contact_email) VALUES('$contact_nom', '$contact_prenom', '$contact_tel', '$contact_email')");
+    <input type ="submit" value="VALIDER">
 
-//Exécution de la requête
-    $req->execute(array(
-        'contact_nom' => $contact_nom,
-        'contact_prenom' => $contact_prenom,
-        'contact_tel' => $contact_tel,
-        'contact_email' => $contact_email
-    ));
+</form>
+
+</body>
+</html>
