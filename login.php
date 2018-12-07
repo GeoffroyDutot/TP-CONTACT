@@ -58,32 +58,29 @@ session_start();
             }
           ?>
                 <fieldset>
-                 <div class="form-group input-group">
-      <div class="input-group-prepend">
-        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
-     </div>
-        <input name="email" class="form-control" placeholder="Adresse email" type="email">
-    </div>
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                        </div>
+                        <input name="email" class="form-control" placeholder="Adresse email" type="email">
+                    </div>
 
-      <div class="form-group input-group">
-      <div class="input-group-prepend">
-       
-    
-   
-    <div class="form-group input-group">
-    <div class="input-group-prepend">
-        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-    </div>
-   
- 
-        <input class="form-control" name="password" placeholder="Mot de passe" type="password">
-    </div> 
-    <div class="form-group input-group">
-      <div class="input-group-prepend">
-      <br>
-    <div class="form-group">
-        <input type="submit" value="Connection" name="inscription" class="btn btn-primary btn-block">
-    </div> 
+
+
+
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                        </div>
+
+
+                        <input class="form-control" name="password" placeholder="Mot de passe" type="password">
+                    </div>
+
+
+                    <div class="form-group">
+                        <input type="submit" value="Je m'inscrit" name="Connexion" class="btn btn-primary btn-block">
+                    </div>
                 </fieldset>
             </form>
         </div>
