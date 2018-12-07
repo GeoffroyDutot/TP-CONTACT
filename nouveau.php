@@ -35,8 +35,11 @@
         <td><input type="text"></td>
     </tr>
 </table>
-</form>
 
+
+    <input type ="button" value="VALIDER">
+
+</form>
 
 </body>
 </html>
