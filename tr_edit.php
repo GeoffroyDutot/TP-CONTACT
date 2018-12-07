@@ -26,7 +26,7 @@ $contact_email = $_POST['contact_email'];
 
 
 //Préparation de l'envoi des données vers la base de données
-    $req = $bdd->prepare("INSERT INTO contact(contact_nom, contact_prenom, contact_tel, contact_email) VALUES('$contact_nom', '$contact_prenom', '$contact_tel', '$contact_email')");
+    $req = $bdd->prepare("UPDATE INTO contact(contact_nom, contact_prenom, contact_tel, contact_email) VALUES('$contact_nom', '$contact_prenom', '$contact_tel', '$contact_email')");
 
 //Exécution de la requête
     $req->execute(array(
