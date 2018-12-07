@@ -30,7 +30,11 @@ catch (Exception $e)
 
     while ($recup = $reqcontact->fetch()){
     ?>
-    <form method="post" action="dashboard.php">
+    <form method="post" action="<?php if (isset($_SESSION['utilisateur_id']) >= 1) {
+              echo "dashboard.php?id=" . $_SESSION['utilisateur_id'];
+          }else {
+              echo "index.php";
+          } ?>">
         <table>
             <tr>
                 <td>Nom :</td>

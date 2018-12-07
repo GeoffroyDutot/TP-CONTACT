@@ -52,8 +52,16 @@ catch (Exception $e)
     <tr>
       <th><?php echo $recup['contact_id']?></th>
       <td><?php echo $recup['contact_nom']?></td>
-      <td><table><tr><form action="fiche-contact.php" method="POST"><input class="invisible" type="text" name="contact_id" value="<?php echo $recup['contact_id']?>" readonly><input type="submit" value="Fiche de contact" class="btn btn-secondary btn-sm"></form>&nbsp;
-          <form action="edit.php" method="POST"><input class="invisible" type="text" name="contact_id" value="<?php echo $recup['contact_id']?>" readonly><input type="submit" value="Modifier" class="btn btn-secondary btn-sm"></form>&nbsp;
+      <td><table><tr><form action="<?php if (isset($_SESSION['utilisateur_id']) >= 1) {
+                      echo "fiche-contact.php?id=" . $_SESSION['utilisateur_id'];
+                  }else {
+                      echo "index.php";
+                  } ?>"" method="POST"><input class="invisible" type="text" name="contact_id" value="<?php echo $recup['contact_id']?>" readonly><input type="submit" value="Fiche de contact" class="btn btn-secondary btn-sm"></form>&nbsp;
+          <form action="<?php if (isset($_SESSION['utilisateur_id']) >= 1) {
+              echo "edit.php?id=" . $_SESSION['utilisateur_id'];
+          }else {
+              echo "index.php";
+          } ?>" method="POST"><input class="invisible" type="text" name="contact_id" value="<?php echo $recup['contact_id']?>" readonly><input type="submit" value="Modifier" class="btn btn-secondary btn-sm"></form>&nbsp;
           <form action="suppr.php" method="POST"><input class="invisible" type="text" name="contact_id" value="<?php echo $recup['contact_id']?>" readonly><input type="submit" value="Supprimer" class="btn btn-secondary btn-sm"></form>
               </tr></table></td>
      </tr>
