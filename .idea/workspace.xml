@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="65bf6d39-3f6d-405d-8c4d-297adcf5cfc3" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="65bf6d39-3f6d-405d-8c4d-297adcf5cfc3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+    </list>
+>>>>>>> c0491b8865e3c74004ce432f4d8504c242fc04a4
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +33,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="95">
               <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
+=======
+            <state relative-caret-position="363">
+              <caret line="50" column="24" lean-forward="true" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+>>>>>>> c0491b8865e3c74004ce432f4d8504c242fc04a4
             </state>
           </provider>
         </entry>
@@ -36,6 +47,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/register.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="95">
               <caret line="111" column="33" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
             </state>
@@ -56,6 +68,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1083">
               <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+=======
+            <state relative-caret-position="1084">
+              <caret line="125" column="39" lean-forward="true" selection-start-line="125" selection-start-column="39" selection-end-line="125" selection-end-column="39" />
+>>>>>>> c0491b8865e3c74004ce432f4d8504c242fc04a4
             </state>
           </provider>
         </entry>
@@ -113,7 +129,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.HTML" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.PHP" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -139,13 +155,21 @@
       <updated>1544102602455</updated>
       <workItem from="1544102605302" duration="8951000" />
       <workItem from="1544170050197" duration="3273000" />
+<<<<<<< HEAD
       <workItem from="1544177792569" duration="1323000" />
       <workItem from="1544180578415" duration="292000" />
+=======
+      <workItem from="1544177792569" duration="2937000" />
+>>>>>>> c0491b8865e3c74004ce432f4d8504c242fc04a4
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="13839000" />
+=======
+    <option name="totallyTimeSpent" value="15161000" />
+>>>>>>> c0491b8865e3c74004ce432f4d8504c242fc04a4
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -173,7 +197,11 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.49099836" />
+=======
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.08640227" />
+>>>>>>> c0491b8865e3c74004ce432f4d8504c242fc04a4
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -265,10 +293,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../site_espace/form/inscrip_connexion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="96" column="31" selection-start-line="96" selection-start-column="31" selection-end-line="96" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="95">
           <caret line="111" column="33" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
+=======
+        <state relative-caret-position="1084">
+          <caret line="125" column="39" lean-forward="true" selection-start-line="125" selection-start-column="39" selection-end-line="125" selection-end-column="39" />
+>>>>>>> c0491b8865e3c74004ce432f4d8504c242fc04a4
         </state>
       </provider>
     </entry>
@@ -281,8 +321,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/suppr.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="133">
           <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-end-line="7" selection-end-column="26" />
+=======
+        <state relative-caret-position="363">
+          <caret line="50" column="24" lean-forward="true" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+>>>>>>> c0491b8865e3c74004ce432f4d8504c242fc04a4
         </state>
       </provider>
     </entry>

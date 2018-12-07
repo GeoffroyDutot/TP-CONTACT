@@ -32,31 +32,31 @@ session_start();
   <h4 class="card-title mt-3 text-center">Se connecter</h4>
 
   <form action="" method="POST">
-            <?php // formulaire de connexion
-            if(isset($_POST['Connexion'])) {
-                
-                $mailconnect = htmlspecialchars($_POST['email']);
-                $mdpconnect = sha1($_POST['password']);
-                // Vérification de la valiter des information entré
-                if(!empty($mailconnect) && !empty($mdpconnect)) {
-                  $requser = $bdd->prepare("SELECT * FROM utilisateurs WHERE email = ? AND password = ?");
-                  $requser->execute(array(
-                    $mailconnect, 
-                    $mdpconnect
-                  ));
-                  $userexist = $requser->rowCount();
-                  if($userexist == 1) {
-                     $userinfo = $requser->fetch();
-                     $_SESSION['utilisateur_id'] = $userinfo['utilisateur_id'];
-                     header("Location: dashboard.php?id=".$_SESSION['utilisateur_id']);
-                  } else {
-                     $erreur_connexion = "Mauvais mail ou mot de passe !";
-                  }
-               } else {
-                  $erreur_connexion = "Tous les champs doivent être complétés !";
-               }
-            }
-          ?>
+      <?php
+      if(isset($_POST['connexion'])) {
+
+      $mailconnect = htmlspecialchars($_POST['email']);
+      $mdpconnect = sha1($_POST['password']);
+      // Vérification de la valiter des information entré
+      if(!empty($mailconnect) && !empty($mdpconnect)) {
+      $requser = $bdd->prepare("SELECT * FROM utilisateurs WHERE email = ? AND password = ?");
+      $requser->execute(array(
+      $mailconnect,
+      $mdpconnect
+      ));
+      $userexist = $requser->rowCount();
+      if($userexist == 1) {
+      $userinfo = $requser->fetch();
+      $_SESSION['utilisateur_id'] = $userinfo['utilisateur_id'];
+      header("Location: dashboard.php?id=".$_SESSION['utilisateur_id']);
+      } else {
+      $erreur_connexion = "Mauvais mail ou mot de passe !";
+      }
+      } else {
+      $erreur_connexion = "Tous les champs doivent être complétés !";
+      }
+      }
+      ?>
                 <fieldset>
                     <div class="form-group input-group">
                         <div class="input-group-prepend">
@@ -79,8 +79,14 @@ session_start();
 
 
                     <div class="form-group">
-                        <input type="submit" value="Je m'inscrit" name="Connexion" class="btn btn-primary btn-block">
+                        <input type="submit" value="Connexion" name="connexion" class="btn btn-primary btn-block">
                     </div>
+
+                    <?php  //Affiche de message d'erreur ou de réussite
+                    if(isset($erreur_connexion)) {
+                        echo '<font color="red">' . $erreur_connexion . "</font>";
+                    }
+                    ?>
                 </fieldset>
             </form>
         </div>
