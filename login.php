@@ -29,7 +29,12 @@ session_start();
 <body>
 <div class="card bg-light">
 <article class="card-body mx-auto" style="max-width: 400px;">
-  <h4 class="card-title mt-3 text-center">Se connecter</h4>
+
+    <div class="form-group">
+        <button type="button" class="btn btn-primary btn-block"><a style="color: white;" href="index.php">Accueil</a></button>
+    </div>
+
+    <h4 class="card-title mt-3 text-center">Se connecter</h4>
 
   <form action="" method="POST">
       <?php

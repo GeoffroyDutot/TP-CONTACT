@@ -36,7 +36,7 @@ catch (Exception $e)
 
 <body>
 
-     
+
 
 <div class="card bg-light">
 <article class="card-body mx-auto" style="max-width: 400px;">
