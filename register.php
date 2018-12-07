@@ -10,8 +10,8 @@ catch (Exception $e)
 {
         die('Erreur : ' . $e->getMessage());
 }
- 
-?> 
+
+?>
 
 <!DOCTYPE html>
 
@@ -43,15 +43,15 @@ catch (Exception $e)
   <h4 class="card-title mt-3 text-center">Inscription</h4>
 
   <form action="" method="POST">
-      <?php 
+      <?php
         if (isset($_POST['inscription'])) {
-                  
+
           $mail = htmlspecialchars($_POST['email']);
           $mail_conf = htmlspecialchars($_POST['conf_email']);
           $mdp = sha1($_POST['password']);
           $mdp_conf = sha1($_POST['conf_password']);
           $mdplentgh = strlen($_POST['password']);
-                  
+
           if (!empty($_POST['email']) && !empty($_POST['conf_email']) && !empty($_POST['password']) && !empty($_POST['conf_password'])) {
             if ($mail == $mail_conf) {
               if (filter_var($mail, FILTER_VALIDATE_EMAIL)) {
@@ -83,7 +83,7 @@ catch (Exception $e)
                         }
                   }else {
                       $erreur = "Tous les champs doivent être complétés !";
-                    }           
+                    }
                 }
                ?>
       <div class="form-group input-group">
@@ -100,25 +100,25 @@ catch (Exception $e)
         <input name="conf_email" class="form-control" placeholder="Confirmer email" type="email">
     </div>
 
-    
-   
+
+
     <div class="form-group input-group">
     <div class="input-group-prepend">
         <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
     </div>
-   
- 
+
+
         <input class="form-control" name="password" placeholder="Mot de passe" type="password">
-    </div> 
+    </div>
     <div class="form-group input-group">
       <div class="input-group-prepend">
         <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
     </div>
         <input class="form-control" name="conf_password" placeholder="Répéter le mot de passe" type="password">
-    </div> 
+    </div>
     <div class="form-group">
-        <input type="submit" value="Je m'inscrit" name="inscription" class="btn btn-primary btn-block">
-    </div> 
+        <input type="submit" value="Je m'inscris" name="inscription" class="btn btn-primary btn-block">
+    </div>
  <br><br>
 <?php  //Affiche de message d'erreur ou de réussite
                         if(isset($erreur)) {
