@@ -14,12 +14,29 @@
 </head>
 <body>
 
+<h1>ajout ou modifidation de contact</h1>
+
+<form>
 <table>
-    <tr>Nom</tr>
-    <tr>Prenom</tr>
-    <tr>Tel</tr>
-    <tr>Email</tr>
+    <tr>
+        <td>Nom :</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>Prenom : </td>
+        <td><input tupe="text"></td>
+    </tr>
+    <tr>
+        <td>Telephone : </td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>Email :</td>
+        <td><input type="text"></td>
+    </tr>
 </table>
+</form>
+
 
 </body>
 </html>

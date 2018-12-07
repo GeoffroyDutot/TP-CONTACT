@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65bf6d39-3f6d-405d-8c4d-297adcf5cfc3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/nouveau.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_modif.php" beforeDir="false" afterPath="$PROJECT_DIR$/add_modif.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nouveau.php" beforeDir="false" afterPath="$PROJECT_DIR$/nouveau.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nouveau.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+            <state relative-caret-position="464">
+              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -131,12 +128,12 @@
       <updated>1544102602455</updated>
       <workItem from="1544102605302" duration="8951000" />
       <workItem from="1544170050197" duration="3273000" />
-      <workItem from="1544177828076" duration="3897000" />
+      <workItem from="1544177828076" duration="5117000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16121000" />
+    <option name="totallyTimeSpent" value="17341000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -272,8 +269,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nouveau.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        <state relative-caret-position="464">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
         </state>
       </provider>
     </entry>
