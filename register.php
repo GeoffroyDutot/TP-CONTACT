@@ -28,7 +28,7 @@ catch (Exception $e)
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 
@@ -78,8 +78,7 @@ catch (Exception $e)
                     }           
                 }
                 
-<<<<<<< HEAD
-              ?>
+?>
 
       <label for="email">Votre e-mail :</label><br>
       <input type="email" name="email" required="" id="email" tabindex="30" /><br>
@@ -97,8 +96,6 @@ catch (Exception $e)
                     ?>
     </form>
   </body>
-=======
-?>
 
 
 <div class="card bg-light">
@@ -154,5 +151,5 @@ catch (Exception $e)
 
 
 </body>
->>>>>>> 2b12dea6d97d86b309aeba3cdbf6a0311509b550
+
 </html>
