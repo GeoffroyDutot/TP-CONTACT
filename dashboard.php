@@ -28,20 +28,24 @@ catch (Exception $e)
       <th scope="col">id</th>
       <th scope="col">Nom</th>
       <th scope="col">Action</th>
-    
     </tr>
   </thead>
   <tbody>
+  <?php
+  $reqcontact = $bdd->query("SELECT * FROM contact");
+
+  while ($recup = $reqcontact->fetch()){
+      ?>
     <tr>
-      <th></th>
-      <td></td>
+      <th><?php echo $recup['contact_id']?></th>
+      <td><?php echo $recup['contact_nom']?></td>
       <td><a href=""><button type="button" class="btn btn-secondary btn-sm">Modifier le contact</button></a>
         <a href="suppr.php"><button type="button" class="btn btn-secondary btn-sm">Supprimer le contact</button></a>
         </td>
-      
-      
-    </tr>
-
+     </tr>
+    <?php
+        }
+    ?>
   </tbody>
 </table>
 				
