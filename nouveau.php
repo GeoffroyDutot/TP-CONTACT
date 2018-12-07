@@ -11,15 +11,15 @@
 
 <h1>ajout ou modifidation de contact</h1>
 
-<form type="POST" action="ajout.php">
+<form method="post" action="ajout.php">
 <table>
     <tr>
         <td>Nom :</td>
-        <td><input type="text" name="contact_nom"></td>
+        <td><input type="text" name="contact_nom" required></td>
     </tr>
     <tr>
         <td>Prenom : </td>
-        <td><input tupe="text" name="contact_prenom"></td>
+        <td><input tupe="text" name="contact_prenom" required></td>
     </tr>
     <tr>
         <td>Telephone : </td>
