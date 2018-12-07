@@ -87,33 +87,48 @@ catch (Exception $e)
 
   <form>
 
-    <div class="form-group input-group">
+      <div class="form-group input-group">
       <div class="input-group-prepend">
         <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
      </div>
         <input name="" class="form-control" placeholder="Adresse email" type="email">
-    </div> <!-- form-group// -->
-    <div class="form-group input-group">
-  
+    </div>
+
+      <div class="form-group input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+     </div>
+        <input name="" class="form-control" placeholder="Confirmer email" type="conf_email">
+    </div>
+
+    
    
     <div class="form-group input-group">
-      <div class="input-group-prepend">
-        <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+    <div class="input-group-prepend">
+        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
     </div>
    
  
         <input class="form-control" placeholder="Mot de passe" type="password">
-    </div> <!-- form-group// -->
+    </div> 
     <div class="form-group input-group">
       <div class="input-group-prepend">
         <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
     </div>
-        <input class="form-control" placeholder="Répéter le mot de passe" type="password">
-    </div> <!-- form-group// -->
+        <input class="form-control" placeholder="Répéter le mot de passe" type="conf_password">
+    </div> 
     <div class="form-group">
         <button type="submit" class="btn btn-primary btn-block"> Créer compte  </button>
-    </div> <!-- form-group// -->
+    </div> 
  
+<?php  //Affiche de message d'erreur ou de réussite
+                        if(isset($erreur)) {
+                        echo '<font color="red">'.$erreur."</font>";
+                         }elseif (isset($reussi)) {
+                             echo($reussi);
+                         }
+                     ?>
+
 </form>
 
 
